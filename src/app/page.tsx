@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import { notFound } from 'next/navigation'
 
 export default function Home() {
-  return (
-    <h1>홈페이지다!!</h1>
-  )
+  notFound();
+  return <h1>홈페이지다!!</h1>
 }
