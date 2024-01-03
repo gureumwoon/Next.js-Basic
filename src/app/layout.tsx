@@ -15,15 +15,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <header className={styles.header}>
-        <h1>Demo Note</h1>
-        <nav className={styles.nav}>
-          <Link href="/products">Products</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
-        </nav>
-      </header>
-      {children}
+      <body>
+        <header className={styles.header}>
+          <h1>Demo Note</h1>
+          <nav className={styles.nav}>
+            <Link href="/products">Products</Link>
+            <Link href="/about">About</Link>
+            <Link href="/contact">Contact</Link>
+          </nav>
+        </header>
+        {children}
+      </body>
     </html>
   )
 }
